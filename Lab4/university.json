@@ -1,0 +1,171 @@
+{
+  "name": "Тестовий університет",
+  "faculties": [
+    {
+      "name": "Факультет 1",
+      "departments": [
+        {
+          "name": "Кафедра 1",
+          "groups": [
+            {
+              "name": "Група 1",
+              "students": [
+                {
+                  "firstName": "Студент1",
+                  "lastName": "Прізвище",
+                  "middleName": "Ім\u0027я",
+                  "gender": "MALE"
+                },
+                {
+                  "firstName": "Студент2",
+                  "lastName": "Прізвище",
+                  "middleName": "Ім\u0027я",
+                  "gender": "MALE"
+                }
+              ]
+            },
+            {
+              "name": "Група 2",
+              "students": [
+                {
+                  "firstName": "Студент1",
+                  "lastName": "Прізвище",
+                  "middleName": "Ім\u0027я",
+                  "gender": "MALE"
+                },
+                {
+                  "firstName": "Студент2",
+                  "lastName": "Прізвище",
+                  "middleName": "Ім\u0027я",
+                  "gender": "MALE"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Кафедра 2",
+          "groups": [
+            {
+              "name": "Група 1",
+              "students": [
+                {
+                  "firstName": "Студент1",
+                  "lastName": "Прізвище",
+                  "middleName": "Ім\u0027я",
+                  "gender": "MALE"
+                },
+                {
+                  "firstName": "Студент2",
+                  "lastName": "Прізвище",
+                  "middleName": "Ім\u0027я",
+                  "gender": "MALE"
+                }
+              ]
+            },
+            {
+              "name": "Група 2",
+              "students": [
+                {
+                  "firstName": "Студент1",
+                  "lastName": "Прізвище",
+                  "middleName": "Ім\u0027я",
+                  "gender": "MALE"
+                },
+                {
+                  "firstName": "Студент2",
+                  "lastName": "Прізвище",
+                  "middleName": "Ім\u0027я",
+                  "gender": "MALE"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Факультет 2",
+      "departments": [
+        {
+          "name": "Кафедра 1",
+          "groups": [
+            {
+              "name": "Група 1",
+              "students": [
+                {
+                  "firstName": "Студент1",
+                  "lastName": "Прізвище",
+                  "middleName": "Ім\u0027я",
+                  "gender": "MALE"
+                },
+                {
+                  "firstName": "Студент2",
+                  "lastName": "Прізвище",
+                  "middleName": "Ім\u0027я",
+                  "gender": "MALE"
+                }
+              ]
+            },
+            {
+              "name": "Група 2",
+              "students": [
+                {
+                  "firstName": "Студент1",
+                  "lastName": "Прізвище",
+                  "middleName": "Ім\u0027я",
+                  "gender": "MALE"
+                },
+                {
+                  "firstName": "Студент2",
+                  "lastName": "Прізвище",
+                  "middleName": "Ім\u0027я",
+                  "gender": "MALE"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Кафедра 2",
+          "groups": [
+            {
+              "name": "Група 1",
+              "students": [
+                {
+                  "firstName": "Студент1",
+                  "lastName": "Прізвище",
+                  "middleName": "Ім\u0027я",
+                  "gender": "MALE"
+                },
+                {
+                  "firstName": "Студент2",
+                  "lastName": "Прізвище",
+                  "middleName": "Ім\u0027я",
+                  "gender": "MALE"
+                }
+              ]
+            },
+            {
+              "name": "Група 2",
+              "students": [
+                {
+                  "firstName": "Студент1",
+                  "lastName": "Прізвище",
+                  "middleName": "Ім\u0027я",
+                  "gender": "MALE"
+                },
+                {
+                  "firstName": "Студент2",
+                  "lastName": "Прізвище",
+                  "middleName": "Ім\u0027я",
+                  "gender": "MALE"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
