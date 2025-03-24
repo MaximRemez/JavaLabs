@@ -1,0 +1,208 @@
+2025-03-24 20:50:42.069841+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "RECORD_BOOK_NUMBER" not found; SQL statement:
+
+INSERT INTO students (first_name, last_name, middle_name, birth_date, record_book_number) VALUES
+                                                                                               ('Іван', 'Петров', 'Олександрович', '2000-01-15', 'S001'),
+                                                                                               ('Марія', 'Іванова', 'Сергіївна', '2001-02-20', 'S002'),
+                                                                                               ('Олег', 'Сидоренко', 'Миколайович', '1999-03-10', 'S003'),
+                                                                                               ('Наталія', 'Коваль', 'Ігорівна', '2002-04-05', 'S004'),
+                                                                                               ('Василь', 'Гончар', 'Васильович', '2000-05-12', 'S005'),
+                                                                                               ('Андрій', 'Мельник', 'Андрійович', '1998-07-25', 'S006'),
+                                                                                               ('Світлана', 'Ткаченко', 'Володимирівна', '2001-08-14', 'S007'),
+                                                                                               ('Юрій', 'Бондар', 'Юрійович', '1997-09-30', 'S008'),
+                                                                                               ('Олександр', 'Шевченко', 'Олександрович', '1996-10-07', 'S009'),
+                                                                                               ('Ганна', 'Захарова', 'Григорівна', '2003-11-18', 'S010'),
+                                                                                               ('Дмитро', 'Лисенко', 'Павлович', '1999-12-23', 'S011'),
+                                                                                               ('Олена', 'Романенко', 'Віталіївна', '2002-01-08', 'S012'),
+                                                                                               ('Максим', 'Кравченко', 'Богданович', '1995-02-14', 'S013'),
+                                                                                               ('Катерина', 'Данилюк', 'Семенівна', '1998-03-19', 'S014'),
+                                                                                               ('Ігор', 'Федорчук', 'Олександрович', '2000-04-22', 'S015'),
+                                                                                               ('Оксана', 'Семенова', 'Анатоліївна', '2001-05-28', 'S016'),
+                                                                                               ('Богдан', 'Кузьменко', 'Ігорович', '1997-07-09', 'S017'),
+                                                                                               ('Людмила', 'Павленко', 'Олегівна', '1999-08-16', 'S018'),
+                                                                                               ('Роман', 'Дорошенко', 'Євгенович', '1996-09-27', 'S019'),
+                                                                                               ('Тетяна', 'Мартиненко', 'Іванівна', '2003-10-11', 'S020') [42122-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Table.getColumn(Table.java:759)
+	at org.h2.command.Parser.parseColumn(Parser.java:1190)
+	at org.h2.command.Parser.parseColumnList(Parser.java:1175)
+	at org.h2.command.Parser.parseInsert(Parser.java:1549)
+	at org.h2.command.Parser.parsePrepared(Parser.java:719)
+	at org.h2.command.Parser.parse(Parser.java:592)
+	at org.h2.command.Parser.parse(Parser.java:564)
+	at org.h2.command.Parser.prepare(Parser.java:451)
+	at org.h2.engine.SessionLocal.prepare(SessionLocal.java:589)
+	at org.h2.engine.SessionLocal.prepare(SessionLocal.java:573)
+	at org.h2.command.dml.RunScriptCommand.execute(RunScriptCommand.java:115)
+	at org.h2.command.dml.RunScriptCommand.update(RunScriptCommand.java:71)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:169)
+	at org.h2.command.Command.executeUpdate(Command.java:256)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:262)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:231)
+	at org.example.database.DatabaseManager.<clinit>(DatabaseManager.java:16)
+	at org.example.Main.main(Main.java:18)
+2025-03-24 20:51:09.381284+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENTS" already exists; SQL statement:
+CREATE TABLE students (
+                          id INT AUTO_INCREMENT PRIMARY KEY,
+                          first_name VARCHAR(50) NOT NULL,
+                          last_name VARCHAR(50) NOT NULL,
+                          middle_name VARCHAR(50),
+                          birth_date DATE NOT NULL,
+                          student_card_number VARCHAR(20) UNIQUE NOT NULL
+) [42101-224]
+2025-03-24 20:53:37.833146+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "RECORD_BOOK_NUMBER" not found; SQL statement:
+
+INSERT INTO students (first_name, last_name, middle_name, birth_date, record_book_number) VALUES
+                                                                                               ('Іван', 'Петров', 'Олександрович', '2000-01-15', 'S001'),
+                                                                                               ('Марія', 'Іванова', 'Сергіївна', '2001-02-20', 'S002'),
+                                                                                               ('Олег', 'Сидоренко', 'Миколайович', '1999-03-10', 'S003'),
+                                                                                               ('Наталія', 'Коваль', 'Ігорівна', '2002-04-05', 'S004'),
+                                                                                               ('Василь', 'Гончар', 'Васильович', '2000-05-12', 'S005'),
+                                                                                               ('Андрій', 'Мельник', 'Андрійович', '1998-07-25', 'S006'),
+                                                                                               ('Світлана', 'Ткаченко', 'Володимирівна', '2001-08-14', 'S007'),
+                                                                                               ('Юрій', 'Бондар', 'Юрійович', '1997-09-30', 'S008'),
+                                                                                               ('Олександр', 'Шевченко', 'Олександрович', '1996-10-07', 'S009'),
+                                                                                               ('Ганна', 'Захарова', 'Григорівна', '2003-11-18', 'S010'),
+                                                                                               ('Дмитро', 'Лисенко', 'Павлович', '1999-12-23', 'S011'),
+                                                                                               ('Олена', 'Романенко', 'Віталіївна', '2002-01-08', 'S012'),
+                                                                                               ('Максим', 'Кравченко', 'Богданович', '1995-02-14', 'S013'),
+                                                                                               ('Катерина', 'Данилюк', 'Семенівна', '1998-03-19', 'S014'),
+                                                                                               ('Ігор', 'Федорчук', 'Олександрович', '2000-04-22', 'S015'),
+                                                                                               ('Оксана', 'Семенова', 'Анатоліївна', '2001-05-28', 'S016'),
+                                                                                               ('Богдан', 'Кузьменко', 'Ігорович', '1997-07-09', 'S017'),
+                                                                                               ('Людмила', 'Павленко', 'Олегівна', '1999-08-16', 'S018'),
+                                                                                               ('Роман', 'Дорошенко', 'Євгенович', '1996-09-27', 'S019'),
+                                                                                               ('Тетяна', 'Мартиненко', 'Іванівна', '2003-10-11', 'S020') [42122-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Table.getColumn(Table.java:759)
+	at org.h2.command.Parser.parseColumn(Parser.java:1190)
+	at org.h2.command.Parser.parseColumnList(Parser.java:1175)
+	at org.h2.command.Parser.parseInsert(Parser.java:1549)
+	at org.h2.command.Parser.parsePrepared(Parser.java:719)
+	at org.h2.command.Parser.parse(Parser.java:592)
+	at org.h2.command.Parser.parse(Parser.java:564)
+	at org.h2.command.Parser.prepare(Parser.java:451)
+	at org.h2.engine.SessionLocal.prepare(SessionLocal.java:589)
+	at org.h2.engine.SessionLocal.prepare(SessionLocal.java:573)
+	at org.h2.command.dml.RunScriptCommand.execute(RunScriptCommand.java:115)
+	at org.h2.command.dml.RunScriptCommand.update(RunScriptCommand.java:71)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:169)
+	at org.h2.command.Command.executeUpdate(Command.java:256)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:262)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:231)
+	at org.example.database.DatabaseManager.<clinit>(DatabaseManager.java:16)
+	at org.example.Main.main(Main.java:18)
+2025-03-24 20:55:37.038933+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "RECORD_BOOK_NUMBER" not found; SQL statement:
+
+INSERT INTO students (first_name, last_name, middle_name, birth_date, record_book_number) VALUES
+                                                                                               ('Іван', 'Петров', 'Олександрович', '2000-01-15', 'S001'),
+                                                                                               ('Марія', 'Іванова', 'Сергіївна', '2001-02-20', 'S002'),
+                                                                                               ('Олег', 'Сидоренко', 'Миколайович', '1999-03-10', 'S003'),
+                                                                                               ('Наталія', 'Коваль', 'Ігорівна', '2002-04-05', 'S004'),
+                                                                                               ('Василь', 'Гончар', 'Васильович', '2000-05-12', 'S005'),
+                                                                                               ('Андрій', 'Мельник', 'Андрійович', '1998-07-25', 'S006'),
+                                                                                               ('Світлана', 'Ткаченко', 'Володимирівна', '2001-08-14', 'S007'),
+                                                                                               ('Юрій', 'Бондар', 'Юрійович', '1997-09-30', 'S008'),
+                                                                                               ('Олександр', 'Шевченко', 'Олександрович', '1996-10-07', 'S009'),
+                                                                                               ('Ганна', 'Захарова', 'Григорівна', '2003-11-18', 'S010'),
+                                                                                               ('Дмитро', 'Лисенко', 'Павлович', '1999-12-23', 'S011'),
+                                                                                               ('Олена', 'Романенко', 'Віталіївна', '2002-01-08', 'S012'),
+                                                                                               ('Максим', 'Кравченко', 'Богданович', '1995-02-14', 'S013'),
+                                                                                               ('Катерина', 'Данилюк', 'Семенівна', '1998-03-19', 'S014'),
+                                                                                               ('Ігор', 'Федорчук', 'Олександрович', '2000-04-22', 'S015'),
+                                                                                               ('Оксана', 'Семенова', 'Анатоліївна', '2001-05-28', 'S016'),
+                                                                                               ('Богдан', 'Кузьменко', 'Ігорович', '1997-07-09', 'S017'),
+                                                                                               ('Людмила', 'Павленко', 'Олегівна', '1999-08-16', 'S018'),
+                                                                                               ('Роман', 'Дорошенко', 'Євгенович', '1996-09-27', 'S019'),
+                                                                                               ('Тетяна', 'Мартиненко', 'Іванівна', '2003-10-11', 'S020') [42122-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Table.getColumn(Table.java:759)
+	at org.h2.command.Parser.parseColumn(Parser.java:1190)
+	at org.h2.command.Parser.parseColumnList(Parser.java:1175)
+	at org.h2.command.Parser.parseInsert(Parser.java:1549)
+	at org.h2.command.Parser.parsePrepared(Parser.java:719)
+	at org.h2.command.Parser.parse(Parser.java:592)
+	at org.h2.command.Parser.parse(Parser.java:564)
+	at org.h2.command.Parser.prepare(Parser.java:451)
+	at org.h2.engine.SessionLocal.prepare(SessionLocal.java:589)
+	at org.h2.engine.SessionLocal.prepare(SessionLocal.java:573)
+	at org.h2.command.dml.RunScriptCommand.execute(RunScriptCommand.java:115)
+	at org.h2.command.dml.RunScriptCommand.update(RunScriptCommand.java:71)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:169)
+	at org.h2.command.Command.executeUpdate(Command.java:256)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:262)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:231)
+	at org.example.database.DatabaseManager.<clinit>(DatabaseManager.java:16)
+	at org.example.Main.main(Main.java:18)
+2025-03-24 21:02:59.262318+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "RECORD_BOOK_NUMBER" not found; SQL statement:
+
+INSERT INTO students (first_name, last_name, middle_name, birth_date, record_book_number) VALUES
+                                                                                               ('Іван', 'Петров', 'Олександрович', '2000-01-15', 'S001'),
+                                                                                               ('Марія', 'Іванова', 'Сергіївна', '2001-02-20', 'S002'),
+                                                                                               ('Олег', 'Сидоренко', 'Миколайович', '1999-03-10', 'S003'),
+                                                                                               ('Наталія', 'Коваль', 'Ігорівна', '2002-04-05', 'S004'),
+                                                                                               ('Василь', 'Гончар', 'Васильович', '2000-05-12', 'S005'),
+                                                                                               ('Андрій', 'Мельник', 'Андрійович', '1998-07-25', 'S006'),
+                                                                                               ('Світлана', 'Ткаченко', 'Володимирівна', '2001-08-14', 'S007'),
+                                                                                               ('Юрій', 'Бондар', 'Юрійович', '1997-09-30', 'S008'),
+                                                                                               ('Олександр', 'Шевченко', 'Олександрович', '1996-10-07', 'S009'),
+                                                                                               ('Ганна', 'Захарова', 'Григорівна', '2003-11-18', 'S010'),
+                                                                                               ('Дмитро', 'Лисенко', 'Павлович', '1999-12-23', 'S011'),
+                                                                                               ('Олена', 'Романенко', 'Віталіївна', '2002-01-08', 'S012'),
+                                                                                               ('Максим', 'Кравченко', 'Богданович', '1995-02-14', 'S013'),
+                                                                                               ('Катерина', 'Данилюк', 'Семенівна', '1998-03-19', 'S014'),
+                                                                                               ('Ігор', 'Федорчук', 'Олександрович', '2000-04-22', 'S015'),
+                                                                                               ('Оксана', 'Семенова', 'Анатоліївна', '2001-05-28', 'S016'),
+                                                                                               ('Богдан', 'Кузьменко', 'Ігорович', '1997-07-09', 'S017'),
+                                                                                               ('Людмила', 'Павленко', 'Олегівна', '1999-08-16', 'S018'),
+                                                                                               ('Роман', 'Дорошенко', 'Євгенович', '1996-09-27', 'S019'),
+                                                                                               ('Тетяна', 'Мартиненко', 'Іванівна', '2003-10-11', 'S020') [42122-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Table.getColumn(Table.java:759)
+	at org.h2.command.Parser.parseColumn(Parser.java:1190)
+	at org.h2.command.Parser.parseColumnList(Parser.java:1175)
+	at org.h2.command.Parser.parseInsert(Parser.java:1549)
+	at org.h2.command.Parser.parsePrepared(Parser.java:719)
+	at org.h2.command.Parser.parse(Parser.java:592)
+	at org.h2.command.Parser.parse(Parser.java:564)
+	at org.h2.command.Parser.prepare(Parser.java:451)
+	at org.h2.engine.SessionLocal.prepare(SessionLocal.java:589)
+	at org.h2.engine.SessionLocal.prepare(SessionLocal.java:573)
+	at org.h2.command.dml.RunScriptCommand.execute(RunScriptCommand.java:115)
+	at org.h2.command.dml.RunScriptCommand.update(RunScriptCommand.java:71)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:169)
+	at org.h2.command.Command.executeUpdate(Command.java:256)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:262)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:231)
+	at org.example.database.DatabaseManager.<clinit>(DatabaseManager.java:16)
+	at org.example.Main.main(Main.java:18)
+2025-03-24 21:05:47.335992+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "delete [*]table students\000d\000aCREATE TABLE IF NOT EXISTS students (\000d\000a                          id INT AUTO_INCREMENT PRIMARY KEY,\000d\000a                          first_name VARCHAR(50) NOT NULL,\000d\000a                          last_name VARCHAR(50) NOT NULL,\000d\000a                          middle_name VARCHAR(50),\000d\000a                          birth_date DATE NOT NULL,\000d\000a                          record_book_number VARCHAR(20) UNIQUE NOT NULL\000d\000a)"; expected "identifier"; SQL statement:
+delete table students
+CREATE TABLE IF NOT EXISTS students (
+                          id INT AUTO_INCREMENT PRIMARY KEY,
+                          first_name VARCHAR(50) NOT NULL,
+                          last_name VARCHAR(50) NOT NULL,
+                          middle_name VARCHAR(50),
+                          birth_date DATE NOT NULL,
+                          record_book_number VARCHAR(20) UNIQUE NOT NULL
+) [42001-224]
+2025-03-24 21:06:41.262085+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "DELETE [*]TABLE students"; expected "identifier"; SQL statement:
+DELETE TABLE students [42001-224]
